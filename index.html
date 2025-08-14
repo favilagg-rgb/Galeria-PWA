@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería de Cuadros</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<header>
+  <h1>Galería de Cuadros</h1>
+</header>
+<main class="grid">
+  <div class="card" onclick="verDetalle('Cuadro 1', 'Autor 1', 'Descripción del cuadro 1', '150€', 'img/cuadro1.jpg')">
+    <img src="img/cuadro1.jpg" alt="Cuadro 1">
+    <h2>Cuadro 1</h2>
+    <p>Autor 1</p>
+  </div>
+  <div class="card" onclick="verDetalle('Cuadro 2', 'Autor 2', 'Descripción del cuadro 2', '200€', 'img/cuadro2.jpg')">
+    <img src="img/cuadro2.jpg" alt="Cuadro 2">
+    <h2>Cuadro 2</h2>
+    <p>Autor 2</p>
+  </div>
+  <div class="card" onclick="verDetalle('Cuadro 3', 'Autor 3', 'Descripción del cuadro 3', '180€', 'img/cuadro3.jpg')">
+    <img src="img/cuadro3.jpg" alt="Cuadro 3">
+    <h2>Cuadro 3</h2>
+    <p>Autor 3</p>
+  </div>
+  <div class="card" onclick="verDetalle('Cuadro 4', 'Autor 4', 'Descripción del cuadro 4', '220€', 'img/cuadro4.jpg')">
+    <img src="img/cuadro4.jpg" alt="Cuadro 4">
+    <h2>Cuadro 4</h2>
+    <p>Autor 4</p>
+  </div>
+</main>
+
+<div id="detalle" class="detalle">
+  <span class="cerrar" onclick="cerrarDetalle()">&times;</span>
+  <img id="detalle-img" src="" alt="Detalle">
+  <h2 id="detalle-titulo"></h2>
+  <p id="detalle-autor"></p>
+  <p id="detalle-desc"></p>
+  <p id="detalle-precio"></p>
+  <button onclick="contactar()">Contactar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
